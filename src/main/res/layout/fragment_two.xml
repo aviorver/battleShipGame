@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/woodbackground"
+
+    >
+    <ImageView
+        android:id="@+id/imageView3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/topten"
+        />
+    <RadioGroup
+        android:layout_alignParentBottom="true"
+        android:id="@+id/RadioButtonDifficultyScore"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/wood"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:focusable="true"
+        android:focusedByDefault="true"
+        android:orientation="horizontal"
+
+        >
+
+        <RadioButton
+            android:id="@+id/EasyButtonScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Easy"
+            android:textSize="25dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:textColor="#000000"
+
+            />
+        <RadioButton
+            android:id="@+id/MediumButtonScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="@string/Medium"
+            android:fontFamily="sans-serif-condensed"
+
+            /><RadioButton
+        android:id="@+id/ProButtonScore"
+        android:layout_width="wrap_content"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_height="wrap_content"
+        android:text="@string/Pro"
+        />
+    </RadioGroup>
+    <ListView
+        android:focusable="false"
+        android:layout_below="@+id/imageView3"
+        android:id="@+id/scorelist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="2dp"
+        android:background="@drawable/wood"
+        android:drawSelectorOnTop="false"
+        android:cacheColorHint="#00000000"
+        android:layout_above="@+id/RadioButtonDifficultyScore"
+ />
+
+</RelativeLayout>

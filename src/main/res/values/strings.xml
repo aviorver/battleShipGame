@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">batlleship</string>
+    <string name="Easy">Easy</string>
+    <string name="Medium">Medium</string>
+    <string name="Pro">Pro</string>
+    <string name="Difficulty">Select Difficulty: </string>
+    <string name="ComputerBoard">Computer Board : </string>
+    <string name="YourBoard">Your Board : </string>
+    <string name="Music">Music</string>
+    <string name="Submit">Submit</string>
+    <string name="Name">Name :</string>
+    <string name="Score">Score :</string>
+    <string name="Rotate">Computer Ships have changed!!</string>
+    <string name="Empty">Cant insert Empty Name!</string>
+    <string name="PersonData">Person Details</string>
+    <string name="EnterName">Enter Your Name Please</string>
+</resources>

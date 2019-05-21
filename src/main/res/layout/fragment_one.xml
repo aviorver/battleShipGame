@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/startbackground">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="159dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/namelogo"
+            />
+
+        <TextView
+            android:id="@+id/LevelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:textColor="#ffffff"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/Difficulty"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+        <RadioGroup
+            android:layout_below="@id/LevelTextView"
+            android:id="@+id/RadioButtonDifficulty"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <RadioButton
+                android:id="@+id/EasyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Easy"
+                android:textSize="25dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                />
+            <RadioButton
+                android:id="@+id/MediumButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="@string/Medium"
+                android:fontFamily="sans-serif-condensed"
+
+                /><RadioButton
+            android:id="@+id/ProButton"
+            android:layout_width="wrap_content"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_height="wrap_content"
+            android:text="@string/Pro"
+            />
+
+        </RadioGroup>
+
+        <Button
+            android:layout_below="@id/scoresbutton"
+            android:layout_width="135dp"
+            android:id="@+id/beg"
+            android:layout_marginLeft="130dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/playbutton"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="StartGame"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/scoresbutton"
+            android:onClick="changeFrament"
+            android:text="Score"
+            android:textStyle="bold"
+            android:background="@drawable/highscore"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/RadioButtonDifficulty"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+</FrameLayout>

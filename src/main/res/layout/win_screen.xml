@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luolc.emojirain.EmojiRainLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/winning"
+    android:background="@drawable/winbackground">
+
+    <Button
+        android:layout_width="143dp"
+        android:layout_height="95dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@drawable/playagain"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="Restart"
+        android:textSize="25dp"
+        tools:ignore="InvalidId" />
+</com.luolc.emojirain.EmojiRainLayout>

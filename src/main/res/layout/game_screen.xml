@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gamebackground"
+    android:id="@+id/gameplay"
+    >
+    <TextView
+        android:id="@+id/userBoardText"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:text="@string/YourBoard"
+        android:background="@drawable/woodbackground"/>
+
+
+    <GridView
+        android:id="@+id/GridViewUser"
+        android:layout_width="400dp"
+        android:layout_below="@id/computerBoardText"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"/>
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/userBoardText"
+        android:paddingRight="10dp"
+        android:id="@+id/progressBar"
+        />
+    <TextView
+        android:id="@+id/computerBoardText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_margin="10dp"
+        android:layout_below="@id/GridViewComputer"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:text="@string/ComputerBoard"
+        android:background="@drawable/woodbackground"/>
+    <GridView
+        android:id="@+id/GridViewComputer"
+        android:layout_centerHorizontal="true"
+        android:layout_height="250dp"
+        android:layout_width="400dp"
+        android:layout_below="@id/userBoardText"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        />
+    <ImageView
+        android:layout_height="250dp"
+        android:layout_width="400dp"
+        android:layout_below="@id/computerBoardText"
+        android:visibility="invisible"
+        android:src="@drawable/alert"
+        android:id="@+id/alertImage"
+        />
+</RelativeLayout>

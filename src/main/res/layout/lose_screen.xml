@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luolc.emojirain.EmojiRainLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/losebackground"
+    android:id="@+id/lossing">
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="98dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/playagain"
+        android:onClick="Restart" /> />
+</com.luolc.emojirain.EmojiRainLayout>
